@@ -1,0 +1,99 @@
+
+import java.util.Scanner;
+public class Bordios_jb {
+  char Select, Press, Menu;
+        int a, b, Display = 0;
+    public Bordios_jb() {
+      
+        
+        
+        Scanner in = new Scanner(System.in);
+        try {           
+             
+          
+
+            while (Display == Select) {
+            System.out.println("Menu");
+            System.out.println("[A]1st * Display");
+            System.out.println("[B]2nd * Display");
+            System.out.println("[C]3rd * Display");
+            System.out.println("[D]4th * Display");
+            System.out.println("[X]Exit");
+            System.out.println("Select");
+            Select = in.next().charAt(Select);
+                
+                if (Select == 'A' 
+                        || Select == 'B' 
+                || Select == 'C' 
+                        || Select == 'D' 
+                || Select == 'X') {
+                    System.out.println(Select);
+                }
+            }
+            if (Select == 'A') {
+                for (a = 1; a <= 5; a++) {
+                    for (b = 1; b <= a; b++) {
+                        System.out.print("*");
+                    }
+                    System.out.println("");
+                }
+                
+            }
+
+            if (Select == 'B') {
+                for (a = 1; a <= 5; a++) {
+                    for (b = a; b <= 5; b++) {
+                        System.out.print("*");
+                    }
+                    System.out.println("");
+                }
+            } 
+               
+
+            if (Select == 'C') {
+                for (a = 1; a <= 5; a++) {
+                    for (b = a; b < 5; b++) {
+                        System.out.print(" ");
+                    }
+                    for (c = a; c > 0; c--) {
+                        System.out.print("*");
+                    }
+                    System.out.println("");
+                }
+                
+               
+            }
+            if (Select == 'D') {
+                for (a = 1; a <= 5; a++) {
+                    for (b = a - 1; b > 0; b--) {
+                        System.out.print(" ");
+                    }
+                    for (c = a; c <= 5; c++) {
+                        System.out.print("*");
+                    }
+                    System.out.println("");
+                }
+            }
+            
+            if (Select=='X'){
+              System.out.print("");
+              System.exit(0);
+            }
+                System.out.println("Press any key to Go Bact to Menu");
+                Press = in.next().charAt(Menu);
+               
+            
+                
+       
+
+        } catch (Exception e) {
+            System.out.println("" + e.getMessage());
+        }
+    
+    }
+    public static void main(String[] args) 
+    {
+        new Bordios_jb();
+    }
+
+}

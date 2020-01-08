@@ -1,0 +1,37 @@
+
+
+import java.util.Scanner;
+
+public class Bordios {
+
+    char EnterRoman;
+    int I = 1, C = 100,
+            V = 5, D = 500,
+            X = 10, M = 1000,
+            L = 50, sum;
+
+    public Bordios() {
+        try {
+            Scanner in = new Scanner(System.in);
+            System.out.println("Enter Roman");
+            EnterRoman = in.next().charAt(EnterRoman);
+
+            if (EnterRoman == 'I' || EnterRoman == 'V' || EnterRoman == 'X' || EnterRoman == 'L'
+                    || EnterRoman == 'C' || EnterRoman == 'D' || EnterRoman == 'M') {
+                sum = X + X + (V - I);
+                sum = (D - C) + X + I + I + I;
+                sum = M + C + (L - X);
+                sum = L + X + X + V + I;
+                System.out.println("Decimal ; " + sum);
+            }
+
+        } catch (Exception e) {
+            System.out.println("" + e.getMessage());
+        }
+    }
+
+    public static void main(String[] args) {
+        new Bordios();
+    }
+
+}

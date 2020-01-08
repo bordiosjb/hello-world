@@ -1,0 +1,57 @@
+
+import java.util.Scanner;
+
+public class Bordios_jb {
+
+    public Bordios_jb() {
+        char Select = 0,Display = 0,Press;
+        int a,y,z;
+
+        try {
+            Scanner in = new Scanner(System.in);
+           
+            System.out.print("Menu");
+            System.out.println("[A]1st * Display  ");
+            System.out.println("[B]2nd * Display  ");
+            System.out.println("[C]3rd * Display  ");
+            System.out.println("[D]4th * Display  ");     
+            System.out.println("[X]Exit  ");
+            System.out.println("Select");
+            Select = in.next().charAt(Select); 
+            while (Display==Select)
+                if (Select=='A'||Select=='B'||Select=='C'||Select=='D'||Select=='X')
+                {
+                System.out.println(Select);
+                }
+            
+            
+         for (a=1; a<=3; a++) {
+            }
+            for (y=1; y<=5; y++) {
+            }
+            System.out.print("*");
+            {
+            System.out.println(" ");
+            }
+            
+        for (a=1; a<=5; a++){               
+            }
+             for (y=1; y<=5; y++){                 
+            }
+             System.out.print("*");
+            {
+            System.out.println(" ");
+            }
+            
+            
+            
+        } catch (Exception e) {
+            System.out.println("" + e.getMessage());
+        }
+    }
+
+    public static void main(String[] args) {
+        new Bordios_jb();
+    }
+
+}
