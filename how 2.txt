@@ -1,0 +1,43 @@
+package bordios123;
+
+import java.util.Scanner;
+
+public class Bordios123 {
+
+    public Bordios123() {
+        try {
+            int voltage, current, Resistance;
+            Scanner in = new Scanner(System.in);
+            String A, E;
+            System.out.println("1. voltage :");
+            System.out.println("2. current :");
+            System.out.println("3. Resistance :");
+
+            System.out.println(" choice :");
+            double choice = in.nextDouble();
+
+            while (choice == 1) {
+                System.out.println("current :");
+                current = (int) in.nextDouble();
+                System.out.println("Resistance :");
+                Resistance = (int) in.nextDouble();
+                voltage = current * Resistance;
+                System.out.println("voltage:" + voltage);
+                System.out.println("");{
+                
+            }
+            }
+           
+            
+        
+
+        } catch (Exception e) {
+            System.out.println("" + e.getMessage());
+        }
+    }
+
+    public static void main(String[] args) {
+        new Bordios123();
+    }
+
+}
